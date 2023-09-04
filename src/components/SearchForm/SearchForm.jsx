@@ -13,6 +13,7 @@ const SearchForm = () => {
     if (search && search.trim()){
       hanldeSetQuery(search);
       handleHistory(search)
+      setSearch('')
     }
   };
   return (
