@@ -1,0 +1,16 @@
+.previous {
+  background-color: var(--main-Color);
+  color: white;
+  width: fit-content;
+  padding: 7px 50px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+  cursor: pointer;
+  font-weight: bold;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid var(--main-Color);
+    color: var(--main-Color);
+  }
+}

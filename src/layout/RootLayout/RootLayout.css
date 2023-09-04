@@ -1,0 +1,73 @@
+.root-layout {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 30px !important;
+    gap: 40px;
+
+    .first-part,
+    .sec-part {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+    }
+
+    & h1 {
+      color: var(--main-Color);
+      text-align: center;
+      font-family: 'Lobster', cursive !important;
+      font-size: 47px;
+      margin-top: -30px;
+
+      @media screen and (min-width:768px) {
+        & {
+          font-size: 55px;
+        }
+      }
+
+      /* sm */
+      @media screen and (min-width:992px) {
+        & {
+          font-size: 70px;
+        }
+      }
+
+      /* lg */
+      @media screen and (min-width:1200px) {
+        & {
+          font-size: 70px;
+
+        }
+      }
+
+    }
+  }
+}
+
+.previousAll {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.both {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-data {
+  color: gray;
+}

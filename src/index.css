@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif !important;  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-Color : #051C33
+}
+body {
+  color: var(--main-Color);
+
+}
+.App {
+  .container {
+    
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    /* sm */
+    max-width: 576px;
+  
+    @media screen and (min-width:768px) {
+      & {
+        max-width: 768px;
+      }
+    }
+    
+    /* sm */
+    @media screen and (min-width:992px) {
+      & {
+        padding: 0;
+        max-width: 992px;
+      }
+    }
+    
+    /* lg */
+    @media screen and (min-width:1200px) {
+      & {
+        padding: 0;
+        max-width: 1200px;
+      }
+    }
+  
+  }
+  
+}

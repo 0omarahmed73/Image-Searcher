@@ -1,0 +1,16 @@
+.img {
+  width: 230px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid;
+  & img {
+    width: 100%;
+    transform: scale(1.05);
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+}
